@@ -4,5 +4,16 @@
 }
 
 body {
-  background-color: rgb(147, 161, 173);
+  background-color: #fff /* #ad9893 */;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 800px;
+  width: 200px;
+  border-color: red;
+  align-items: center;
+  justify-content: center;
+  border: 5px;
 }
