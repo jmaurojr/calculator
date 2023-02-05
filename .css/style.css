@@ -21,15 +21,18 @@ body {
   align-items: center;
   border: 5px;
   z-index: 1;
-  background-color: #726aee;
+  /* background-color: #726aee; */
+  border-color: #726aee;
   border-radius: 10px;
   margin: 0 auto;
   min-width: 390px;
+  border: 1px solid blue;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
 }
 
 .display {
   background-color: #fff;
-  height: 120px;
+  height: 140px;
   width: 350px;
   margin-top: 180px;
   border-radius: 10px;
@@ -37,6 +40,7 @@ body {
   display: flex;
   align-items: center;
   font-family: Oswald, sans-serif;
+  box-shadow: inset 0px 8px 10px rgba(0, 0, 0, 0.5);
 }
 
 .display-terms {
@@ -95,7 +99,7 @@ body {
   align-items: center;
   justify-content: space-around;
   padding: 10px;
-  margin-top: -90px;
+  margin-top: -80px;
   margin-bottom: 10px;
   position: relative;
   z-index: 1;
@@ -108,15 +112,17 @@ body {
   grid-row-start: 5;
   grid-row-end: 7;
   z-index: 2;
-  background-color: #fff;
+  background-color: #726aee;
+  color: #fff;
   height: 60px;
   width: 60px;
   font-size: 25px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 30px;
   position: relative;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
 }
 
 .equal:hover {
@@ -130,12 +136,14 @@ body {
   height: 60px;
   width: 60px;
   font-size: 25px;
-  color: #726aee;
+  color: black;
   cursor: pointer;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
 }
 
 .number:hover {
-  background-color: black;
+  background-color: #726aee;
+  color: #fff;
 }
 
 .operator {
@@ -147,19 +155,60 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  color: #726aee;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
 }
 
 .operator:hover {
-  background-color: black;
+  background-color: #726aee;
   color: #fff;
 }
 
 .ghost {
-  background-color: #726aee;
+  background-color: #fff;
   border-radius: 50%;
   height: 60px;
   width: 60px;
   font-size: 25px;
   justify-content: center;
   align-items: center;
+}
+
+.theme {
+  justify-content: right;
+  position: relative;
+}
+
+#blue-theme {
+  display: flex;
+  flex-direction: row;
+  z-index: 3;
+  position: inherit;
+  background-color: #726aee;
+  height: 20px;
+  width: 20px;
+  margin-top: 10px;
+  border-radius: 50%;
+  justify-content: space-around;
+}
+
+#blue-theme:hover {
+  cursor: pointer;
+}
+
+#black-theme {
+  display: flex;
+  flex-direction: row;
+  z-index: 3;
+  position: inherit;
+  background-color: black;
+  height: 20px;
+  width: 20px;
+  margin-top: -20px;
+  margin-left: 30px;
+  border-radius: 50%;
+}
+
+#black-theme:hover {
+  cursor: pointer;
 }
