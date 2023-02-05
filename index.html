@@ -5,40 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href=".css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>Calculator</title>
   </head>
   <body>
     <div class="container">
-      <div class="viewfinder">
-        <div class="terms">1+1</div>
-        <div class="results">2</div>
+      <div class="display">
+        <div class="display-terms">1+1</div>
+        <div class="display-results">2</div>
       </div>
       <div class="buttons-container">
         <div class="line1-buttons">
           <button class="operator" id="ac">AC</button>
           <button class="operator" id="division">/</button>
           <button class="operator" id="multiplication">*</button>
-          <button class="operator" id="backspace"></button>
+          <button class="operator" id="backspace">
+            <i class="fa-solid fa-delete-left"></i>
+          </button>
         </div>
-        <div class="line2-buttons"></div>
-        <button class="number" id="seven">7</button>
-        <button class="number" id="eight">8</button>
-        <button class="number" id="nine">9</button>
-        <button class="operator" id="minus">-</button>
-        <div class="line3-buttons"></div>
-        <button class="number" id="four">4</button>
-        <button class="number" id="five">5</button>
-        <button class="number" id="six">6</button>
-        <button class="operator" id="plus">+</button>
-        <div class="line4-buttons"></div>
-        <button class="number" id="four">4</button>
-        <button class="number" id="five">5</button>
-        <button class="number" id="six">6</button>
-        <button class="operator" id="equal">=</button>
-        <div class="line5-buttons"></div>
-        <button class="number" id="percent">%</button>
-        <button class="number" id="zero">0</button>
-        <button class="number" id="comma">,</button>
+        <div class="line2-buttons">
+          <button class="number" id="seven">7</button>
+          <button class="number" id="eight">8</button>
+          <button class="number" id="nine">9</button>
+          <button class="operator" id="minus">-</button>
+        </div>
+        <div class="line3-buttons">
+          <button class="number" id="four">4</button>
+          <button class="number" id="five">5</button>
+          <button class="number" id="six">6</button>
+          <button class="operator" id="plus">+</button>
+        </div>
+        <div class="line4-buttons">
+          <button class="number" id="four">1</button>
+          <button class="number" id="five">2</button>
+          <button class="number" id="six">3</button>
+          <button class="ghost" id="none"></button>
+        </div>
+        <div class="equal-btn">
+          <button class="equal" id="equal" style="height: 160px">=</button>
+        </div>
+        <div class="line5-buttons">
+          <button class="operator" id="percent">%</button>
+          <button class="number" id="zero">0</button>
+          <button class="operator" id="comma">,</button>
+          <button class="ghost" id="none"></button>
+        </div>
       </div>
     </div>
   </body>
