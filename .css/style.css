@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 844px;
+  height: 95vh;
   width: 390px;
   align-items: center;
   border: 5px;
