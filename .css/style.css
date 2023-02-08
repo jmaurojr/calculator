@@ -175,7 +175,8 @@ body {
 }
 
 .theme {
-  justify-content: right;
+  display: flex;
+  justify-content: flex-end;
   position: relative;
 }
 
