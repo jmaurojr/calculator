@@ -23,8 +23,8 @@ function calculate() {
   }
 }
 
-const blueTheme = document.getElementById("blue-theme");
+/* const blueTheme = document.getElementById("blue-theme");
 
 blueTheme.addEventListener("click", () => {
   document.body.classList.toggle("dark");
-});
+}); */

@@ -36,8 +36,9 @@ body {
   width: 350px;
   margin-top: 180px;
   border-radius: 10px;
-  justify-content: right;
+  justify-content: flex-end;
   display: flex;
+  flex-direction: row;
   align-items: center;
   font-family: Oswald, sans-serif;
   box-shadow: inset 0px 8px 10px rgba(0, 0, 0, 0.5);
@@ -45,14 +46,16 @@ body {
 
 .display-terms {
   font-size: 40px;
-  justify-content: right;
+  justify-content: flex-end;
+  display: flex;
   margin-right: -25px;
   margin-top: -50px;
 }
 
 .display-results {
   font-size: 40px;
-  justify-content: right;
+  display: flex;
+  justify-content: flex-end;
   margin-top: 40px;
   margin-right: 42px;
 }
